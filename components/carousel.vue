@@ -1,6 +1,8 @@
 <template>
 	<div class="carousel-view">
 		<transition-group
+			v-touch:swipe.left="next"
+			v-touch:swipe.right="previous"
 			class="carousel"
 			tag="div"
 		>
@@ -57,6 +59,16 @@ export default class Carousel extends Vue {
 				title: 'I am Slide E',
 				id: 5,
 				image: 'https://i.picsum.photos/id/1049/300/300.jpg'
+			},
+			{
+				title: 'I am Slide F',
+				id: 6,
+				image: 'https://i.picsum.photos/id/1050/300/300.jpg'
+			},
+			{
+				title: 'I am Slide G',
+				id: 7,
+				image: 'https://i.picsum.photos/id/1051/300/300.jpg'
 			}
 		]
 	}

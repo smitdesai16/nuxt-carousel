@@ -20,7 +20,8 @@ export default {
 	plugins: [
 		'@/plugins/vue_lazyload',
 		'@/plugins/v_click_outside',
-		'@/plugins/ip_address'
+		'@/plugins/ip_address',
+		{ src: '~/plugins/vue-touch', ssr: false }
 	],
 	buildModules: [
 		'@nuxt/typescript-build',
